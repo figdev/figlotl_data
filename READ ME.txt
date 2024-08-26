@@ -3,6 +3,9 @@ axolotl, big update :3
 https://minecraft.fandom.com/wiki/Tutorials/Creating_a_data_pack#Getting_started
 https://github.com/figdev/
 
+in minecraft/loot_table/entities/axolotl.json,
+this file will 
+
 tasks:
 axolotl helmets and sword
     modify behavior for water companion (tameable)
