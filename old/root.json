@@ -1,0 +1,60 @@
+{
+    "display":
+    {
+        "icon":
+        {
+            "item": "minecraft:diamond_sword",
+            "nbt": "{Enchantments:[{}lvl:1s, id:\"minecraft:mending\"}]}"
+        },
+        "title":
+        {
+            "text": "Chicken?!?",
+            "color": "aqua",
+            "bold": true
+        },
+        "description":
+        {
+            "text":"You monster!",
+            "italics":true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria":
+    {
+        "kill_chicken":
+        {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type" : "minecraft:Chicken",
+                    "nbt" : "{player_killed_entity}"
+                },
+                "killing_blow" : 
+                {
+                    "source_entity":
+                    {
+                        "nbt": "{SelectedItem:{id:\"minecraft:netherite_sword\"}}"
+                    }
+                }
+            }
+        }
+    },
+    "requirements" :
+    [
+        [
+            "kill_chicken",
+            "killing_blow"
+        ]
+    ],
+    "rewards" :
+    {
+        "loot" :
+        [
+            "minecraft:diamond"
+        ],
+        "experience" : 1000
+    }
+}
